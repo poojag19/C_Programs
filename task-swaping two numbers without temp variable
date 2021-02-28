@@ -1,0 +1,15 @@
+// Task swapping the two given integer numbers without temporary variables
+#include<stdio.h>
+int main() {
+      int fno, sno;
+      printf("Enter first number: ");
+      scanf("%d", &fno);
+      printf("Enter second number: ");
+      scanf("%d", &sno);
+      fno=fno+sno;   
+	  sno=fno-sno;    
+	  fno=fno-sno;
+      printf("\nAfter swapping, First Number  = %d", fno);
+      printf("\n            and Second Number = %d", sno);
+      return 0;
+}
